@@ -1,0 +1,8 @@
+Javascript 98
+React Libraries 94
+RESTful APIs on Node.Js and Express 75
+Mongoose and Mongo dB 69
+Technical Writing 78
+Tailwind CSS 71
+Inferential Statistics 55
+ 

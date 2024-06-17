@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Web Dev</title>
+    <link rel="stylesheet" href="output.css">
+    <!--External link for Box Icons Reference-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/c21216cc75.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-background">    
+    <!--Night Day Toggle-->
+    <input type="checkbox" id="dark_toggle" class="w-0 h-0 top-0 hidden">
+        <label id="toggle_label" for="dark_toggle" class="w-14 h-5 fixed right-9 block bg-slate-50 rounded-2xl shadow-inner cursor-pointer duration-1000 top-1"></label>
+    <div class="bg-background" id="bodydiv">
+        <!--Header Section-->
+        <header class="fixed top-5 right-0 left-0 lg:py-1 transition-all duration-300">
+            <!--Site Logo + Title-->
+            <nav class="max-w-7xl mx-auto bg-gray-800 lg:bg-transparent mt-0 lg:p-5">             
+                <div class="flex items-center justify-between m-5">
+                    <a href="/" class="text-white font-bold text-lg flex items-center gap-3"><img src="../Images/LogoMain.svg" alt="" class="bg-primary rounded-full">Sabyasachi Sahani</a>
+                    <!--Navigation Bar solely for Desktop and Laptop-->  
+                    <div class="hidden lg:flex space-x-10">
+                        <a href="#Home" class="text-primary hover:text-gray-300">Home</a>
+                        <a href="#About" class="text-white hover:text-gray-300">About</a>
+                        <a href="#Skills" class="text-white hover:text-gray-300">Skills</a>
+                        <a href="#Projects" class="text-white hover:text-gray-300">Projects</a>
+                        <a href="#Certifications" class="text-white hover:text-gray-300">Certifications</a>
+                        <a href="#Contact" class="text-white hover:text-gray-300">Contact</a>
+                    </div>
+
+                    <!--Hamburger Icon display for Samsung Galaxy S8+-->
+                    <div class="block lg:hidden mr-6"> <!--"Hidden property applied only greater than/equal to 768px"-->
+                        <button id="galaxy-menu-button" class="text-white text-2xl focus:outline-none hover:bg-gray-700 group">
+                            <i class='bx bx-menu'></i>
+                            <!--Navigation bar for Samsung Galaxy S8+-->
+                            <div id="galaxy-menu" class=" bg-gray-800 lg:hidden absolute top-20 -right-full opacity-0 h-screen transform group-focus:right-0 group-focus:opacity-100 transition-all duration-300 text-xl">
+                                <a href="#Home" class="text-primary hover:text-gray-300 block py-2 hover:bg-gray-700">Home</a>
+                                <a href="#About" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">About</a>
+                                <a href="#Skills" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Skills</a>
+                                <a href="#Projects" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Projects</a>
+                                <a href="#Certifications" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Certifications</a>
+                                <a href="#Contact" class="text-white hover:text-gray-300 block py-2 hover:bg-gray-700">Contact</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Banner Section-->
+        <section id="Home" class="max-w-7xl mx-auto px-5 my-16">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-4 py-14 pt-20 text-white">
+                <!--Left of the Banner-->
+                <div class="lg:w-2/5">
+                    <p class="text-xl text-center font-inter font-medium mb-4"><i class="fa-regular fa-circle-down"></i><span class="text-primary"> My work as a</span></p>
+                    <h1 class="lg:text-4xl md:text-4xl text-center font-bold tracking-[3.22px] mb-5 font-inter">Coder</h1>
+                    <p class="lg:text-2xl md:text-2xl text-center font-monstserrat mb-5">MERN Stack Developer</p>
+                    <p class="lg:text-xl md:text-xl mb-12 lg:w-7/7 text-justify leading-8">Allow me to introduce myself. I'm a passionate MERN stack developer with a flair for creating robust and user-friendly web applications. My journey in the world of coding began with a fascination for exploring the Web Architecture.</p>
+                    <div class="flex justify-center">
+                        <button class="py-4 px-10 rounded-md bg-primary text-white font-bold hover:bg-indigo-600"><a href="https://www.linkedin.com/in/sabyasachi-sahani-b667119a/" target="_blank">Let's Connect</a></button>
+                    </div>
+                    
+                    <!--Social Icons-->
+                    <div id="left-social" class="py-4 mt-12 mb-8 flex gap-4 justify-center items-center bg-gradient-to-br from-green-700 via-background to-blue-700 rounded-full">
+                        <p class="lg:text-xl lg:font-extrabold">Reach Me On: </p>
+                        <div class="flex space-x-3">
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="https://www.linkedin.com/in/sabyasachi-sahani-b667119a/" class="w-8 h-8"><i class="fa-brands fa-linkedin"></i></a>
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="https://www.instagram.com/sibuspd/" class="w-8 h-8"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="https://www.facebook.com/sibuspd" class="w-8 h-8"><i class="fa-brands fa-facebook"></i></a>
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="mailto:sibuspd@gmail.com" class="w-8 h-8"><i class="fa-solid fa-envelope"></i></a>
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="https://wa.me/918234008357" class="w-8 h-8"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a class="text-2xl hover:text-cyan-400 hover:scale-150" href="tel:+8234008357" class="w-8 h-8"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Middle Banner-->           
+                <div class="w-2/3 lg:w-1/5 order-first lg:order-none">
+                    <img src="../Images/Banner.png" alt="" class="lg:w-full rounded-full animate-pulse transition ease-in-out duration-1000 lg:hover:scale-150 cursor-cell hover:opacity-40">
+                </div>
+                <!--Right of the Banner-->
+                <div class="lg:w-2/5">
+                    <p class="text-xl text-center font-inter font-medium mb-4"><i class="fa-regular fa-circle-down"></i><span class="text-primary"> My work as a</span></p>
+                    <h1 class="lg:text-4xl md:text-4xl text-center font-bold tracking-[3.22px] mb-5 font-inter">Writer</h1>
+                    <p class="lg:text-2xl md:text-2xl text-center font-monstserrat mb-5">Content/Blog Writer</p>
+                    <p class="lg:text-xl  md:text-xl mb-12 lg:w-7/7 text-justify leading-8">I spin threads of wonder, crafting narratives that transport readers to distant lands. Whether it’s a moonlit romance or an epic quest, my words beckon, inviting readers to explore realms beyond reality. My Pen goes berserk.</p>
+                    <div class="flex justify-center">
+                        <button class="py-4 px-10 rounded-md bg-primary text-white font-bold hover:bg-indigo-600"><a href="../bin/Sample Resume.pdf" download target="_blank">Download Resume</a></button>
+                    </div>
+                    <!--Explore More Section-->
+                    <div id="right-explore" class="py-4 mt-12 mb-8 flex justify-center items-center gap-4 bg-gradient-to-br from-green-700 via-background to-blue-700 rounded-full">
+                        <p class="text-center lg:text-xl lg:font-extrabold">Explore More...</p>
+                        <div class="flex space-x-3">
+                            <a href="" class="w-8 h-8 text-2xl hover:text-cyan-400 hover:scale-150"><i class="fa-solid fa-book-open-reader"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    <!--About Section-->
+    <section id="About" class="max-w-7xl mx-auto px-5 my-12">
+        <div class="text-white">
+            <h3 class="text-3xl font-bold mb-5 font-inter text-center">About <span class="text-primary">Me</span></h3>
+            <div id="about-container" class="flex flex-wrap">
+                <div id="Profile" class="lg:w-1/2">
+                    <h4 class="lg:text-xl md:text-xl font-extralight mb-5 font-monstserrat text-center italic text-blue-200">Jack of many Trades, Master of Fun!</h4>
+                    <p class="text-justify lg:text-left mb-2 lg:px-12 md:text-lg mx-auto font-monstserrat font-medium">
+                        Hello! I’m Sabyasachi Sahani, a passionate web developer and content writer. Let me tell you a bit about myself - I thrive on turning ideas into functional websites. Whether it’s crafting elegant front-end interfaces or diving into back-end logic, I love the dynamic world of web development. Words are my playground. With a background in both Engineering and Political Science, I blend technical precision with a deep understanding of social dynamics. My writing journey spans over 7 years, covering diverse topics such as Wildlife & Nature, Travel, Human Psychology, Popular Myths, Lifestyle, Business, and Technology.
+                    </p>
+                    <span class="mb-6 px-12 mx-auto font-monstserrat font-medium">........</span>
+                    <input type="checkbox" id="aboutButton" class="hidden"/>
+                    <label for="aboutButton" class="p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-full hover:bg-indigo-600" >Read More</label>
+                    <!--Read More Section-->
+                    <div id="extra" class="">
+                        <span class="mb-6 px-12 mx-auto font-monstserrat font-semibold italic text-primary">
+                            Interests:</span>
+                        <p class="text-justify lg:text-left mb-6 lg:px-12 md:text-lg mx-auto font-monstserrat font-medium">
+                            Geo-politics -  I’m fascinated by global affairs and how they shape our world.
+                            Military -  The strategic dance of nations and the stories behind it captivate me.
+                            Music: From classical melodies to indie rock, music fuels my creativity.
+                            Society: Understanding people and their interactions keeps me curious.
+                        </p>
+                        <span class="mb-6 px-12 mx-auto font-monstserrat font-semibold italic text-primary">
+                            Consistent Upscaling:</span>
+                        <p class="text-justify lg:text-left mb-6 lg:px-12 md:text-lg mx-auto font-monstserrat font-medium">
+                            I believe in lifelong learning. Every day is an opportunity to acquire new skills, broaden my horizons, and stay ahead in this ever-evolving digital landscape.
+                            
+                            Hailing from Sambalpur, Odisha - 
+                            My roots lie in the serene landscapes of Odisha, where culture and tradition blend seamlessly.
+                            
+                            Frenzypen - 
+                            Explore my thoughts, experiences, and insights on my blog, Frenzypen. It’s a canvas where words come alive.
+                            
+                            Apolitical Stance - 
+                            While I appreciate diverse viewpoints, I mostly steer clear of political biases. Let’s focus on understanding rather than debating.
+                        </p>
+                        <span class="mb-6 px-12 mx-auto font-monstserrat font-medium italic">The End</span>
+                        <label for="aboutButton" class="p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-full hover:bg-indigo-600" >Show Less</label>
+                    </div>
+                    
+                </div>
+                <div id="profileImage" class="lg:w-1/2 flex justify-end items-center">
+                    <img class="w-3/3 rounded-ray  shadow-md" src="../Images/MernThumb.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="Skills" class="max-w-7xl mx-auto px-5 my-12 text-white">
+        <div class="border-white">
+            <div>
+                <h3 class="text-3xl font-bold font-inter mb-16 text-center">My <span class="text-primary">Skills</span></h3>
+            </div>
+            <div id="bar&circlular-container" class="p-4 flex flex-row flex-wrap justify-between">
+                <!--Linear Progress Bars Container-->
+                <div id="bars-container" class="lg:w-3/6 md:w-full px-5">
+                    <!--Each of the Skill Profiles -->
+                        <div id="skill-icon" class="mb-4 duration-200 text-yellow-200 font-bold border border-blue-500"><i class='bx bxl-javascript'></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">JavaScript</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-49/50 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">98%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-blue-300 font-bold border border-blue-500"><i class='bx bxl-react'></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">React Libraries</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-47/50 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">94%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-green-300 font-bold border border-blue-500"><i class='bx bxl-nodejs'></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">RESTful APIs on Node.Js and Express</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-3/4 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">75%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-green-400 font-bold border border-blue-500"><i class='bx bxl-mongodb' ></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">Mongoose and Mongo dB</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-69/100 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">69%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-red-400 font-bold border border-blue-500"><i class='bx bx-cog'></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">Technical Writing</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-39/50 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">78%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-blue-500 font-bold border border-blue-500"><i class='bx bxl-tailwind-css' ></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">Tailwind CSS</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <spa class="w-71/100 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">71%</span>
+                            </div>
+                        </div>
+
+                        <div id="skill-icon" class="mb-4 animate-none duration-200 text-pink-300 font-bold border border-blue-500"><i class='bx bx-stats' ></i>
+                            <div id="skill-name" class=""> 
+                                <span class="text-sm">Inferential Statistics</span>
+                            </div>
+                            <div id="skill-bar" class="w-full h-4 bg-black relative rounded-md animate-loading origin-left">
+                                <span class="w-11/20 absolute h-4 bg-primary rounded-sm animate-loading shadow-md shadow-gray-200 hover:animate-bounce">55%</span>
+                            </div>
+                        </div>
+                </div>        
+                <!--Circular Progress Indicators Container -->
+                <div id="circular-container" class="lg:w-3/6">
+                    <h1 class="mb-12 text-xl text-center underline underline-offset-8">Interpersonal Skills</h1>
+                    <div class="radial-bars border flex gap-1 flex-wrap justify-center items-center">
+                        
+                            <span>--Empathy</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="25.092138671875" class="animate-circle_loading92 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">92%</text>
+                            </svg>
+
+                            <span>Pragmatism</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="47.04776000976563" class="animate-circle_loading85 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">85%</text>
+                            </svg>
+
+
+                            <span>Teamsman</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="84.68596801757813" class="animate-circle_loading73 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">73%</text>
+                            </svg>
+
+                            <span>-Callibration</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="90.95900268554688" class="animate-circle_loading71 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">71%</text>
+                            </svg>
+
+                            <span>Punctuality</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="112.9146240234375" class="animate-circle_loading64 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">64%</text>
+                            </svg>
+
+                            <span>Comm-skills</span>
+                            <svg class="bg-background lg:w-1/3 md:w-full rounded-none text-white">
+                                <circle cx="50%" cy="50%" r="50" fill="transparent" stroke="#0872BF" stroke-width="20" stroke-dasharray="313.6517333984375" stroke-dashoffset="75.276416015625" class="animate-circle_loading86 hover:animate-pulse duration-300"/>
+                                <text x="40%" y="55%" fill="white">86%</text>
+                            </svg>     
+                 
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!--Certification Section-->    
+    <section id="Certifications" class="max-w-7xl mx-auto px-5 my-16 text-white">
+        <div id="Certifications-info" class="text-center">
+            <p class="font-inter mb-3 font-bold text-3xl text-primary">My <span class="text-white" id="cert-span">Certifications</span></p>
+            <h3 class="text-blue-400 text-3xl font-bold font-inter mb-16">Involved in 5 Core Areas as a Software Professional ...</h3>
+        </div>
+        <!--Certifications Card Module-->
+        <div id="card-container" class="my-16 flex flex-wrap lg:flex-row justify-around">
+            
+            <!--Cert 1-->
+            <div class="lg:w-1/3 md:w-2/3 px-2 py-12 md:mb-4 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl hover:bg-[#5dadec3b] ">
+                <div class="w-2/3 h-1/2 m-auto mb-3 bg-white flex items-center rounded-md">
+                    <img src="../Images/MITxPro.jpg" alt="" class="w-full max-h-full mx-auto rounded-md">
+                </div>
+                <h5 class="text-center my-5 text-xl">Professional Certificate in Coding</h5>
+                <div class="mx-4 h-1/3">
+                    <p class="text-justify ">MIT xPro in collaboration with Emeritus, covers the MERN stack (MongoDB, Express.js, React.js, and Node.js).</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <input type="checkbox" id="Cert1-button" class="hidden"/>
+                    <label for="Cert1-button" class="px-3 py-1 relative cursor-pointer bg-primary text-inter text-white font-medium rounded-lg hover:bg-indigo-600" >Open Certificate</label>
+                    <div id="extra-Cert1" class="absolute mt-6">
+                        <div class="w-19/20">
+                            <img class="w-full px-12 mx-auto" src="../Images/Cert1Image.png"/>
+                            <label for="Cert1-button" class="flex justify-center p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-lg hover:bg-indigo-600" >Close Certificate</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cert 2-->
+            <div class="lg:w-1/3 md:w-2/3 px-2 py-12 md:mb-4 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl hover:bg-[#5dadec3b]">
+                <div class="w-2/3 h-1/2 m-auto mb-3 bg-white flex items-center rounded-md border-yellow-400">
+                    <img src="../Images/IITKnp.jpg" alt="" class="w-full max-h-full mx-auto rounded-md">
+                </div>
+                <h5 class="text-center my-5 text-xl">Full Stack Advance in MERN</h5>
+                <div class="mx-4 h-1/3">
+                    <p class="text-justify ">Integrating MongoDB, build front-end interfaces with React, and create full-stack MERN projects.</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <input type="checkbox" id="Cert2-button" class="hidden"/>
+                    <label for="Cert2-button" class="px-3 py-1 relative cursor-pointer bg-primary text-inter text-white font-medium rounded-lg hover:bg-indigo-600" >Open Certificate</label>
+                    <div id="extra-Cert2" class="absolute mt-6">
+                        <div class="w-19/20">
+                            <img class="w-full px-12 mx-auto" src="../Images/Cert2Image.png"/>
+                            <label for="Cert2-button" class="flex justify-center p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-lg hover:bg-indigo-600" >Close Certificate</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cert 3-->
+            <div class="lg:w-1/3 md:w-2/3 px-2 py-12 md:mb-4 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl hover:bg-[#5dadec3b]">
+                <div class="w-2/3 h-1/2 m-auto mb-3 bg-white flex items-center rounded-md border-yellow-400">
+                    <img src="../Images/MTA Network Fundamentals.png" alt="" class="w-full max-h-full mx-auto rounded-md">
+                </div>
+                    <h5 class="text-center my-5 text-xl">Networking Fundamentals: Exam 366</h5>
+                    <div class="mx-4 h-1/3">
+                        <p class="text-justify ">Essential networking concepts.
+                            Topics include local area networking, OSI model, wired and wireless networks, Internet Protocol, and TCP/IP.</p>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <input type="checkbox" id="Cert3-button" class="hidden"/>
+                        <label for="Cert3-button" class="px-3 py-1 relative cursor-pointer bg-primary text-inter text-white font-medium rounded-lg hover:bg-indigo-600" >Open Certificate</label>
+                        <div id="extra-Cert3" class="absolute mt-6">
+                            <div class="w-19/20">
+                                <img class="w-full px-12 mx-auto" src="../Images/Cert3Image.jpg"/>
+                                <label for="Cert3-button" class="flex justify-center p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-lg hover:bg-indigo-600" >Close Certificate</label>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+
+            <!--Cert 4-->
+            <div class="lg:w-1/3 md:w-2/3 px-2 py-12 md:mb-4 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl hover:bg-[#5dadec3b]">
+                <div class="w-2/3 h-1/2 m-auto mb-3 bg-white flex items-center rounded-md border-yellow-400">
+                    <img src="../Images/OpenJS_Foundation.png" alt="" class="w-full max-h-full mx-auto rounded-md">
+                </div>
+                <h5 class="text-center my-5 text-xl">Certified NODE JS Developer (JSNSD)</h5>
+                <div class="mx-4 h-1/3">
+                    <p class="text-justify ">Created RESTful Node.js servers and services (or microservices).
+                        with emphasis on security practices</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <input type="checkbox" id="Cert4-button" class="hidden"/>
+                    <label for="Cert4-button" class="px-3 py-1 relative cursor-pointer bg-primary text-inter text-white font-medium rounded-lg hover:bg-indigo-600" >Open Certificate</label>
+                    <div id="extra-Cert4" class="absolute mt-6">
+                        <div class="w-19/20">
+                            <img class="w-full px-12 mx-auto" src="../Images/Cert4Image.png"/>
+                            <label for="Cert4-button" class="flex justify-center p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-lg hover:bg-indigo-600" >Close Certificate</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Cert 5-->
+            <div class="lg:w-1/3 md:w-2/3 px-2 py-12 md:mb-4 rounded-lg border border-primary shadow-[#5dadec3b] cursor-pointer shadow-xl hover:bg-[#5dadec3b]">
+                <div class="w-2/3 h-1/2 m-auto mb-3 bg-white flex items-center rounded-md border-yellow-400">
+                    <img src="../Images/Salesforce.png" alt="" class="w-full max-h-full mx-auto rounded-md">
+                </div>
+                <h5 class="text-center my-5 text-xl">Javascript Developer I</h5>
+                <div class="mx-4 h-1/3">
+                    <p class="text-justify ">Focused on front-end and/or back-end JavaScript applications for the web stack, completing the Lightning Web Components Specialist Superbadge and passing the proctored exam.</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <input type="checkbox" id="Cert5-button" class="hidden"/>
+                    <label for="Cert5-button" class="px-3 py-1 relative cursor-pointer bg-primary text-inter text-white font-medium rounded-lg hover:bg-indigo-600" >Open Certificate</label>
+                    <div id="extra-Cert5" class="absolute mt-6">
+                        <div class="w-19/20">
+                            <img class="w-full px-12 mx-auto" src="../Images/Cert5Image.png"/>
+                            <label for="Cert5-button" class="flex justify-center p-2 relative cursor-pointer bg-primary text-inter text-sm font-bold rounded-lg hover:bg-indigo-600" >Close Certificate</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Project Section-->
+    <section id="Projects" class="px-5 my-32 mx-auto max-w-7xl">
+        <div class="text-white text-center">
+            <h3 class="text-3xl font-bold mb-5">Recent <span class="text-primary">Projects</span></h3>
+            <p class="mb-6 lg:w-3/4 lg:px-12 mx-auto">Explore a curated collection of my diverse projects—ranging from full-stack web applications to innovative mobile solutions. Each project reflects my passion for clean code, user-centric design, and problem-solving. Dive in and discover the tech stack, challenges overcome, and the impact these projects have made</p>
+        </div>
+        <!--Project Cards Module-->
+        <div class="lg:grid lg:grid-cols-2 gap-8 items-center my-20">
+            
+            <div id="card-1" class="relative border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/recipe.jpg" alt="" class="p-5 w-full max-h-96 rounded-l-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project1-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl border rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">A culinary delight!</span>
+                    <h2 class="text-xl mb-3">Recipe Kitchen App</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://cookbookmanager.com/features/recipe-manager-web-app" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-2" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/weatherapp.png" alt="" class="p-5 w-full h-96 rounded-r-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project2-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">A practical choice!</span>
+                    <h2 class="text-xl mb-3">Weather App</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.cnet.com/tech/services-and-software/best-weather-app/" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-3" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/online-learning.jpg" alt="" class="p-5 w-full max-h-96 rounded-l-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project3-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">Education is power!</span>
+                    <h2 class="text-xl mb-3">Online Learning Platform</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.learnworlds.com/what-is-online-learning/" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-4" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/to-do list.jpg" alt="" class="p-5 w-full max-h-96 rounded-r-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project4-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">A productivity essential!</span>
+                    <h2 class="text-xl mb-3">To-Do List App</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://clickup.com/blog/to-do-list-app/" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-5" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/quizapp.jpg" alt="" class="p-5 w-full max-h-96 rounded-l-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project5-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">Fun and engaging!</span>
+                    <h2 class="text-xl mb-3">Quiz App</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.flexiquiz.com/quiz-maker" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-6" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/e-commerce.jpg" alt="" class="p-5 w-full max-h-96 rounded-r-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project6-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">A lucrative choice!</span>
+                    <h2 class="text-xl mb-3">E-Commerce Solution</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.shopify.com/blog/ecommerce-app" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div id="card-7" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/finance-tracker.jpg" alt="" class="p-5 w-full max-h-96 rounded-l-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project7-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">Money matters!</span>
+                    <h2 class="text-xl mb-3">Finance Tracker</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.investopedia.com/best-budgeting-apps-5085405" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div id="card-8" class="border border-primary shadow-xl shadow-[#5dadec3b] lg:w-[550px] mx-auto rounded-2xl p-5 lg:p-0 hover:bg-gradient-to-r from-green-800 via-background to-green-300">
+                <img src="../Images/blog_realestate.jpg" alt="" class="p-5 w-full max-h-96 rounded-r-full cursor-pointer hover:scale-105 transition-all duration-300">
+                <div id="project8-data" class="px-5 py-8 text-white bg-slate-500 shadow-xl rounded-b-2xl opacity-0 transition-opacity">
+                    <span class="block text-sm">A niche with potential!</span>
+                    <h2 class="text-xl mb-3">Real Estate Blog</h2>
+                    <a class="font-bold text-lime-200 hover:underline" href="https://www.investopedia.com/best-real-estate-apps-5071405" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Form Section-->   
+    <section id="Contact" class="max-w-7xl mx-auto px-5 my-16 text-white">
+        <div id="Contact-container" class="">
+            <h3 class="text-3xl font-bold mb-5 font-inter text-center">Contact <span class="text-primary">Us</span></h3>
+            <form action="./thankyou.html" method="post">
+                <div id="form-container" class="p-12 mb-12 max-w-full flex flex-wrap justify-between shadow-lg shadow-primary rounded-md border-t-4 border-primary">
+                    <!--Name section-->
+                    <div class="lg:w-1/2 flex flex-wrap gap-4">
+                        <label for="name" class="w-19/20">Name:</label>
+                        <input type="text" placeholder="Write Full Name" name="name" required class="w-full lg:w-2/3 mb-8 p-2 outline-offset-1 rounded-sm justify-end text-black">
+                    </div>
+
+                    <!--Phone section-->
+                    <div class="lg:w-1/2 flex flex-wrap gap-4">
+                        <label for="phone" class="w-19/20">Phone Number:</label>
+                        <input type="tel" placeholder="+ISD-(xxx)-(xxx)-(xxxx)" name="phone" required class="w-full lg:w-2/3 mb-8 p-2 outline-offset-1 rounded-sm justify-end text-black">
+                    </div>
+
+                    <!--Email Section-->
+                    <div class="lg:w-1/2 md:w-full flex flex-wrap gap-4">
+                        <label for="email" class="w-19/20">Email Address</label>
+                        <input type="text" placeholder="Email:" name="email" required class="w-full lg:w-2/3 mb-8 p-2 outline-offset-1 rounded-sm justify-end text-black">
+                    </div>
+                    
+                    <!--Message Section-->
+                    <div class="w-full flex flex-wrap gap-4">
+                        <label for="message" class="w-19/20">Message:</label>
+                        <textarea name="message" placeholder="Write your Message" id="message" required class="w-full h-36 mb-8 outline-offset-1 rounded-sm text-black">
+                        </textarea>
+                    </div>
+                   
+                    <!--Profession-->
+                    <span class="w-19/20 mb-4">Select your Profession - </span>
+                    <div class="mb-8 lg:flex flex-row md:flex">
+                        <div>
+                            <input type="radio" name="profession" id="salaried" class="cursor-pointer">
+                            <label for="salaried" class="pr-9 pl-3 cursor-pointer">Salaried</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="profession" id="selfEmployed" class="cursor-pointer">
+                            <label for="selfEmployed" class="pr-9 pl-3 cursor-pointer">Self-Employed</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="profession" id="student" class="cursor-pointer">
+                            <label for="student" class="pr-9 pl-3 cursor-pointer">Student</label>
+                        </div>
+                    </div>
+                    
+                    <!--Privacy Statement-->
+                    <div class="italic font-xl font-monstserrat mb-3">
+                        <p>By clicking Submit, you agree to our <a href="#" class="underline text-primary">Terms</a> and <a href="#" class="underline text-primary">Privacy</a> policies. You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+                    <div id="button-container" class="flex justify-center w-full">
+                        <button value="Query" id="button" type="submit" class="inline-block p-2 px-4 font-semibold rounded-xl bg-gradient-to-r from-blue-800 via-background to-primary duration-100 transition-smoo hover:bg-gradient-to-l">Submit</button>
+                    </div>
+                
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer id="Footer-section" class="max-w-7xl mx-auto px-5 my-16 ">
+        <h4 class="text-2xl text-white pt-12 mb-12">Portfolio</h4>
+        <div class="text-white lg:ml-16 flex flex-col lg:flex-row md:flex-row justify-between lg:items-center gap-6">
+            <div id="footer-nav" class="lg:w-/3">
+                <h5 class="mb-3 underline underline-offset-4">Jump to</h5>
+                <a href="#" class="block my-2 text-sm text-slate-300">Home</a>
+                <a href="#" class="block my-2 text-sm text-slate-300">About Me</a>
+                <a href="#" class="block my-2 text-sm text-slate-30">Skills</a>
+                <a href="#" class="block my-2 text-sm text-slate-30">Certifications</a>
+                <a href="#" class="block my-2 text-sm text-slate-30">Projects</a>
+                <a href="#" class="block my-2 text-sm text-slate-30">Contact</a>
+            </div>
+            <div id="footer-nav2" class="lg:w-/3">
+                <h5 class="mb-3 underline underline-offset-4">Resources</h5>
+                <a href="#" class="block my-2 text-sm text-slate-300">Privacy Policy</a>
+                <a href="#" class="block my-2 text-sm text-slate-300">Terms & Conditions</a>
+                <a href="#" class="block my-2 text-sm text-slate-30"><i class="fa-brands fa-windows"></i></a>
+                <a href="#" class="block my-2 text-sm text-slate-30"><i class="fa-brands fa-android"></i></a>
+                <a href="#" class="block my-2 text-sm text-slate-30"><i class="fa-brands fa-apple"></i></a>
+                <a href="#" class="block my-2 text-sm text-slate-30"><i class="fa-brands fa-chrome"></i></a>
+            </div>
+
+            <div class="lg:w-1/3 md:w-full">
+                <h5 class="mb-5">Subscribe to our Newsletter</h5>
+                <div class="relative">
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" class="bg-[#2B2E3C] py-3 pl-5 rounded-lg">
+                    <input type="submit" value="Subscribe" class="absolute bg-primary py-3 px-8 rounded-lg left-44 cursor-pointer font-bold hover:bg-indigo-600" >
+                </div>
+            </div>
+        </div>
+        <!--Footer Contact Icons-->
+        <div id="wrapper" class="mt-5 flex justify-center">
+            <div id="phone-button" class="inline-block w-14 h-14 float-left m-2 bg-primary rounded-full cursor-pointer shadow-sm hover:w-48 transition-all duration-400 ease-out overflow-hidden">
+                <div id="phone-icon" class="text-white inline-block w-14 h-14 rounded-full box-border leading-10 text-center"><i class='bx bxs-phone-call' ></i></div>
+                <span class="text-white text-lg font-medium leading-10 m-3"><a href="tel:+8234008357">Phone</a></span>
+            </div>
+
+            <div id="email-button" class="inline-block w-14 h-14 float-left m-2 bg-red-400 rounded-full cursor-pointer shadow-sm hover:w-48 transition-all duration-400 ease-out overflow-hidden">
+                <div id="email-icon" class="text-white inline-block w-14 h-14 rounded-full box-border leading-10 text-center"><i class='bx bxl-gmail' ></i></div>
+                <span class="text-white text-lg font-medium leading-10 m-3"><a href="mailto:sibuspd@gmail.com">Gmail</a></span>
+            </div>
+
+            <div id="wa-button" class="inline-block w-14 h-14 float-left m-2 bg-green-400 rounded-full cursor-pointer shadow-sm hover:w-48 transition-all duration-400 ease-out overflow-hidden">
+                <div id="wa-icon" class="text-white inline-block w-14 h-14 rounded-full box-border leading-10 text-center"><i class='bx bxl-whatsapp' ></i></div>
+                <span class="text-white text-lg font-medium leading-10 m-3"><a href="https://wa.me/918234008357">Watsapp</a></span>
+            </div>
+        </div>
+    </footer>
+</div>  
+</body>
+</html>
